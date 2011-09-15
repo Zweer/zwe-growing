@@ -30,7 +30,7 @@ var ZweGrowing = new Class({
         this.setOptions(options);
         this.element = document.id(element).setStyles({
             resize: 'none',
-            overflowY: 'hidden'
+            'overflow-y': 'hidden'
         });
 
         this.originalSize = this.element.getStyle(this.property).toInt();
