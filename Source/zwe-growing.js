@@ -138,7 +138,7 @@ ZweGrowing.TextArea = new Class({
 
     _calculate: function()
     {
-        this.clone.setStyle('height', 0);
+        this.clone.setStyle(this.property, 0);
         this.clone.set('value', this.element.get('value'));
         this.scroll = Math.max(this.originalSize, this.clone.getScrollSize().y) + this.options.extraSpace;
     }
